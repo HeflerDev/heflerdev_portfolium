@@ -27,6 +27,7 @@ export default {
   h1 {
     color: $light;
     font-weight: 900;
+    margin-bottom: 0;
   }
 
   span {

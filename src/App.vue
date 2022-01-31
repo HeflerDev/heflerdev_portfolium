@@ -9,12 +9,14 @@
     -->
       <HomeHeader />
       <AboutSection />
+      <SkillsSection />
   </div>
 </template>
 
 <script>
 import HomeHeader from './views/HomeHeader.vue'
 import AboutSection from  './views/AboutSection.vue'
+import SkillsSection from './views/SkillsSection.vue'
 
 export default {
   data() {
@@ -24,7 +26,8 @@ export default {
   },
   components: {
     HomeHeader,
-    AboutSection
+    AboutSection,
+    SkillsSection
   }
 }
 </script>
