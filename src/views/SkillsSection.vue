@@ -24,6 +24,8 @@
               :iconColor="iconColor"
               title="Web Dev"
               text="Web-driven knowledge to develop, build, deploy and maintain a website."
+              :technologies="['HtmlIcon', 'CSSIcon', 'WebpackIcon', 'GitIcon']"
+              :iconSize="44"
             />
           </b-col>
 
@@ -34,6 +36,8 @@
               :iconColor="iconColor"
               title="Frontend"
               text="Knowledge focused in using the latest of technologies avaiable when it comes to interface design."
+              :technologies="['ReactIcon', 'VueIcon', 'SASSIcon', 'BootstrapIcon']"
+              :iconSize="44"
             />
           </b-col>
 
@@ -44,6 +48,8 @@
               :iconColor="iconColor"
               title="Backend"
               text="Knowledge focused in managing the operations wich the final user don't see, but need it."
+              :technologies="['RubyIcon', 'RailsIcon']"
+              :iconSize="44"
               />
           </b-col>
 
@@ -64,7 +70,7 @@ export default {
   },
   data() {
     return {
-      iconColor: "white"
+      iconColor: "#db3513"
     }
   }
 }

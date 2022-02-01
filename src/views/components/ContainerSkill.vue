@@ -2,7 +2,7 @@
   <div class="content">
     <div class="icon-container">
       <div :is="icon"
-        :color="iconColor"
+        color="white"
         :size="iconSize"
       />
     </div>
@@ -11,7 +11,9 @@
       {{text}}
       <VueSlideUpDown :active="active" >
         <b-row>
-
+          <b-col col sm="4" v-for="technology in technologies" :key="technology">
+            <div class='aux-icon' :is="technology" :size="iconSize" :color="iconColor"></div>
+          </b-col>
         </b-row>
       </VueSlideUpDown>
     </p>
@@ -35,7 +37,7 @@ import JSIcon from '../../assets/icons/JSIcon.vue';
 import RailsIcon from '../../assets/icons/RailsIcon.vue';
 import ReactIcon from '../../assets/icons/ReactIcon.vue';
 import RubyIcon from '../../assets/icons/RubyIcon.vue';
-import SassIcon from '../../assets/icons/SASSIcon.vue';
+import SASSIcon from '../../assets/icons/SASSIcon.vue';
 import VueIcon from '../../assets/icons/VueIcon.vue';
 import WebpackIcon from '../../assets/icons/WebpackIcon.vue';
 
@@ -48,12 +50,12 @@ export default {
     iconSize: Number,
     title: String,
     text: String,
-    technologies: Array
+    technologies: Array,
+    iconSize: Number,
   },
   data() {
     return {
       active: false,
-      technologies: technologies
     }
   },
   methods: {
@@ -65,6 +67,17 @@ export default {
     FrontIcon,
     BackIcon,
     BrowserIcon,
+    CSSIcon,
+    BootstrapIcon,
+    GitIcon,
+    HtmlIcon,
+    JSIcon,
+    RailsIcon,
+    ReactIcon,
+    RubyIcon,
+    SASSIcon,
+    VueIcon,
+    WebpackIcon,
     VueSlideUpDown
   }
 }
@@ -76,7 +89,7 @@ export default {
   .content {
     width: 100%;
     min-height: 15rem;
-    height: 100%;
+    height: fit-content;
     border: solid $gray-600 3px;
     border-radius: 20px;
     padding: 2rem;
@@ -103,5 +116,9 @@ export default {
     left: 0;
     width: 100%;
     border-radius: 0;
+  }
+
+  .aux-icon {
+    margin: 1rem auto;
   }
 </style>
