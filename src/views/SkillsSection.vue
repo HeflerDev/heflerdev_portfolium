@@ -18,14 +18,36 @@
     - WebpackIcon
   -->
           <b-col col lg="3">
-            <ContainerSkill />
+            <ContainerSkill
+              icon="BrowserIcon"
+              v-bind:iconSize="36"
+              :iconColor="iconColor"
+              title="Web Dev"
+              text="Web-driven knowledge to develop, build, deploy and maintain a website."
+            />
           </b-col>
+
           <b-col col lg="3">
-            <ContainerSkill />
+            <ContainerSkill
+              icon="FrontIcon"
+              v-bind:iconSize="36"
+              :iconColor="iconColor"
+              title="Frontend"
+              text="Knowledge focused in using the latest of technologies avaiable when it comes to interface design."
+            />
           </b-col>
+
           <b-col col lg="3">
-            <ContainerSkill />
+            <ContainerSkill
+              icon="BackIcon"
+              v-bind:iconSize="36"
+              :iconColor="iconColor"
+              title="Backend"
+              text="Knowledge focused in managing the operations wich the final user don't see, but need it."
+              />
           </b-col>
+
+
         </b-row>
     </div>
   </b-container>
@@ -35,11 +57,15 @@
 <script>
 import ContainerSkill from './components/ContainerSkill.vue'
 
-
 export default {
   name: "SkillsSection",
   components: {
-    ContainerSkill
+    ContainerSkill,
+  },
+  data() {
+    return {
+      iconColor: "white"
+    }
   }
 }
 </script>
