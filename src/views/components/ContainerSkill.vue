@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="content">
+  <div class="content" :class="{open: active}">
     <div class="icon-container">
       <div :is="icon"
         color="white"
@@ -17,7 +17,7 @@
         </b-row>
       </VueSlideUpDown>
     </p>
-    <b-button class="btn see-more-button" @click="expandButton">
+    <b-button class="btn see-more-button" :class="{isActive: active}" @click="expandButton">
         Technologies
     </b-button>
   </div>
@@ -97,6 +97,7 @@ export default {
     position: relative;
     flex-direction: column;
     overflow: hidden;
+    transition: 0.1s;
     h2, p {
       text-align: left;
     }
@@ -120,5 +121,20 @@ export default {
 
   .aux-icon {
     margin: 1rem auto;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.3);
+      transition: 0.5s;
+    }
+  }
+
+  .isActive {
+    background-color: $orange !important;
+    border: none;
+  }
+
+  .open {
+    border: solid $gray-400 1px;
+    transition: 0.2s;
   }
 </style>
