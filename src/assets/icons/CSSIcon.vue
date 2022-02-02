@@ -5,14 +5,14 @@
 <script>
 
 export default {
-  name: "CSSIcon",
+  name: 'CSSIcon',
   props: {
     size: {
       default: 24,
       type: Number
     },
     color: {
-      default: "black",
+      default: 'black',
       type: String
     }
   }

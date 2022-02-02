@@ -53,7 +53,6 @@
               />
           </b-col>
 
-
         </b-row>
     </div>
   </b-container>
@@ -64,13 +63,13 @@
 import ContainerSkill from './components/ContainerSkill.vue'
 
 export default {
-  name: "SkillsSection",
+  name: 'SkillsSection',
   components: {
-    ContainerSkill,
+    ContainerSkill
   },
-  data() {
+  data () {
     return {
-      iconColor: "#db3513"
+      iconColor: '#db3513'
     }
   }
 }

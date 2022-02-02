@@ -5,14 +5,14 @@
 <script>
 
 export default {
-  name: "BackIcon",
+  name: 'BackIcon',
   props: {
     size: {
       default: 24,
       type: Number
     },
     color: {
-      default: "black",
+      default: 'black',
       type: String
     }
   }

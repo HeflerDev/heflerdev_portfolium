@@ -21,7 +21,6 @@
         </b-nav-item-dropdown>
       </b-navbar-nav>
 
-
     </b-collapse>
   </b-navbar>
 </div>
@@ -29,7 +28,7 @@
 
 <script>
 export default {
-  name: "VueNavbar"
+  name: 'VueNavbar'
 }
 </script>
 

@@ -26,24 +26,23 @@
 <script>
 import VueSlideUpDown from 'vue-slide-up-down'
 
-import FrontIcon from '../../assets/icons/FrontIcon.vue';
-import BackIcon from '../../assets/icons/BackIcon.vue';
-import BrowserIcon from '../../assets/icons/BrowserIcon.vue';
-import CSSIcon from '../../assets/icons/CSSIcon.vue';
-import BootstrapIcon from '../../assets/icons/BootstrapIcon.vue';
-import GitIcon from '../../assets/icons/GitIcon.vue';
-import HtmlIcon from '../../assets/icons/HtmlIcon.vue';
-import JSIcon from '../../assets/icons/JSIcon.vue';
-import RailsIcon from '../../assets/icons/RailsIcon.vue';
-import ReactIcon from '../../assets/icons/ReactIcon.vue';
-import RubyIcon from '../../assets/icons/RubyIcon.vue';
-import SASSIcon from '../../assets/icons/SASSIcon.vue';
-import VueIcon from '../../assets/icons/VueIcon.vue';
-import WebpackIcon from '../../assets/icons/WebpackIcon.vue';
-
+import FrontIcon from '../../assets/icons/FrontIcon.vue'
+import BackIcon from '../../assets/icons/BackIcon.vue'
+import BrowserIcon from '../../assets/icons/BrowserIcon.vue'
+import CSSIcon from '../../assets/icons/CSSIcon.vue'
+import BootstrapIcon from '../../assets/icons/BootstrapIcon.vue'
+import GitIcon from '../../assets/icons/GitIcon.vue'
+import HtmlIcon from '../../assets/icons/HtmlIcon.vue'
+import JSIcon from '../../assets/icons/JSIcon.vue'
+import RailsIcon from '../../assets/icons/RailsIcon.vue'
+import ReactIcon from '../../assets/icons/ReactIcon.vue'
+import RubyIcon from '../../assets/icons/RubyIcon.vue'
+import SASSIcon from '../../assets/icons/SASSIcon.vue'
+import VueIcon from '../../assets/icons/VueIcon.vue'
+import WebpackIcon from '../../assets/icons/WebpackIcon.vue'
 
 export default {
-  name: "ContainerSkill",
+  name: 'ContainerSkill',
   props: {
     icon: String,
     iconColor: String,
@@ -51,16 +50,16 @@ export default {
     title: String,
     text: String,
     technologies: Array,
-    iconSize: Number,
+    iconSize: Number
   },
-  data() {
+  data () {
     return {
-      active: false,
+      active: false
     }
   },
   methods: {
-    expandButton() {
-      this.active ? this.active = false : this.active = true;
+    expandButton () {
+      this.active ? this.active = false : this.active = true
     }
   },
   components: {

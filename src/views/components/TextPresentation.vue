@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "TextPresentation",
+  name: 'TextPresentation',
   props: {
     text: String
   }
@@ -38,6 +38,5 @@ export default {
   b {
     color: $orange;
   }
-
 
 </style>

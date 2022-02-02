@@ -10,9 +10,9 @@
 import ComputerImage from '../../assets/images/COMPUTER.png'
 
 export default {
-  name: "ImageComputer",
-  data() {
-    return{
+  name: 'ImageComputer',
+  data () {
+    return {
       ComputerImage: ComputerImage
     }
   }

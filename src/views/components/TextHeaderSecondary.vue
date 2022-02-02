@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "TextHeaderSecondary"
+  name: 'TextHeaderSecondary'
 }
 </script>
 

@@ -5,14 +5,14 @@
 <script>
 
 export default {
-  name: "RailsIcon",
+  name: 'RailsIcon',
   props: {
     size: {
       default: 24,
       type: Number
     },
     color: {
-      default: "black",
+      default: 'black',
       type: String
     }
   }

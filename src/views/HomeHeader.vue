@@ -18,34 +18,34 @@
 </template>
 
 <script>
-  import VueNavbar from './components/VueNavbar.vue'
-  import TextPresentation from './components/TextPresentation.vue'
-  import ImageComputer from "./components/ImageComputer.vue"
-  import TextHeaderSecondary from "./components/TextHeaderSecondary.vue"
+import VueNavbar from './components/VueNavbar.vue'
+import TextPresentation from './components/TextPresentation.vue'
+import ImageComputer from './components/ImageComputer.vue'
+import TextHeaderSecondary from './components/TextHeaderSecondary.vue'
 
-  import GithubIcon from '../assets/icons/GithubIcon.vue'
-  import InstagramIcon from '../assets/icons/InstagramIcon.vue'
-  import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
+import GithubIcon from '../assets/icons/GithubIcon.vue'
+import InstagramIcon from '../assets/icons/InstagramIcon.vue'
+import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
 
-  const iconSize = 36;
+const iconSize = 36
 
-  export default {
-    name: "HomeHeader",
-    data() {
-      return {
-        size: iconSize
-      }
-    },
-    components: {
-      VueNavbar,
-      TextPresentation,
-      ImageComputer,
-      TextHeaderSecondary,
-      GithubIcon,
-      InstagramIcon,
-      LinkedinIcon
+export default {
+  name: 'HomeHeader',
+  data () {
+    return {
+      size: iconSize
     }
+  },
+  components: {
+    VueNavbar,
+    TextPresentation,
+    ImageComputer,
+    TextHeaderSecondary,
+    GithubIcon,
+    InstagramIcon,
+    LinkedinIcon
   }
+}
 </script>
 
 <style lang="scss" scoped>

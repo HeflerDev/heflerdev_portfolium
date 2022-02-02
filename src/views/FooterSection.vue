@@ -39,7 +39,7 @@ export default {
     LinkedinIcon,
     GMailIcon
   },
-  data() {
+  data () {
     return {
       iconColor: '#db3513',
       iconSize: 36

@@ -13,7 +13,7 @@
 <script>
 
 export default {
-  name: 'ProjectsSection',
+  name: 'ProjectsSection'
 }
 </script>
 

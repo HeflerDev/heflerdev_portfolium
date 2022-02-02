@@ -5,14 +5,14 @@
 <script>
 
 export default {
-  name: "RubyIcon",
+  name: 'RubyIcon',
   props: {
     size: {
       default: 32,
       type: Number
     },
     color: {
-      default: "black",
+      default: 'black',
       type: String
     }
   }

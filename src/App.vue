@@ -28,7 +28,7 @@
 
 <script>
 import HomeHeader from './views/HomeHeader.vue'
-import AboutSection from  './views/AboutSection.vue'
+import AboutSection from './views/AboutSection.vue'
 import SkillsSection from './views/SkillsSection.vue'
 import ProjectsSection from './views/ProjectsSection.vue'
 import AboutMeSection from './views/AboutMeSection.vue'
@@ -38,8 +38,8 @@ import BG from './assets/images/PROJECTS.png'
 import FooterBG from './assets/images/CONTACT.png'
 
 export default {
-  data() {
-    return{
+  data () {
+    return {
       message: 'Hello Universe'
     }
   },
@@ -51,7 +51,7 @@ export default {
     AboutMeSection,
     FooterSection
   },
-  data() {
+  data () {
     return {
       BG,
       FooterBG

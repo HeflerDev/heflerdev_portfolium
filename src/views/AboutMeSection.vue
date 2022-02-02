@@ -19,14 +19,14 @@
 
 <script>
 
-import LocationIcon from '../assets/icons/LocationIcon.vue';
+import LocationIcon from '../assets/icons/LocationIcon.vue'
 
 export default {
-  name: "AboutMeSection",
+  name: 'AboutMeSection',
   components: {
     LocationIcon
   },
-  data() {
+  data () {
     return {
       iconColor: '#db3513'
     }
