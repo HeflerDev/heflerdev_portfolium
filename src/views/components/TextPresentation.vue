@@ -1,17 +1,24 @@
 <template lang="html">
-    <b-col col sm="3" class="mt-4">
-      <div class="content">
-        <h1>{{text}}</h1>
-        <span><b>|</b> Desenvolvedor FullStack</span>
-      </div>
-    </b-col>
+  <b-col
+    col
+    sm="3"
+    class="mt-4"
+  >
+    <div class="content">
+      <h1>{{ text }}</h1>
+      <span><b>|</b> Desenvolvedor FullStack</span>
+    </div>
+  </b-col>
 </template>
 
 <script>
 export default {
   name: 'TextPresentation',
   props: {
-    text: String
+    text: {
+      default: '',
+      type: String
+    }
   }
 }
 </script>

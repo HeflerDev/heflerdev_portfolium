@@ -7,22 +7,22 @@
       <h2>{{message}}</h2>
       <h3>Some Other Message</h3>
     -->
-      <HomeHeader />
-      <AboutSection />
-      <SkillsSection />
-      <div class="image-container">
-        <b-container>
-          <ProjectsSection />
-        </b-container>
-        <b-img :src="BG" />
-      </div>
+    <HomeHeader />
+    <AboutSection />
+    <SkillsSection />
+    <div class="image-container">
       <b-container>
-        <AboutMeSection />
+        <ProjectsSection />
       </b-container>
-      <div class="footer">
-        <FooterSection />
-        <b-img :src="FooterBG"  />
-      </div>
+      <b-img :src="BG" />
+    </div>
+    <b-container>
+      <AboutMeSection />
+    </b-container>
+    <div class="footer">
+      <FooterSection />
+      <b-img :src="FooterBG" />
+    </div>
   </div>
 </template>
 
@@ -38,11 +38,6 @@ import BG from './assets/images/PROJECTS.png'
 import FooterBG from './assets/images/CONTACT.png'
 
 export default {
-  data () {
-    return {
-      message: 'Hello Universe'
-    }
-  },
   components: {
     HomeHeader,
     AboutSection,
@@ -53,6 +48,7 @@ export default {
   },
   data () {
     return {
+      message: 'Hello Universe',
       BG,
       FooterBG
     }
