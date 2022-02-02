@@ -8,17 +8,25 @@
       <h3>Some Other Message</h3>
     -->
     <HomeHeader />
-    <AboutSection />
-    <SkillsSection />
-    <div class="image-container">
+    <section>
+      <AboutSection />
+    </section>
+    <section>
+      <SkillsSection />
+    </section>
+    <section>
+      <div class="image-container">
+        <b-container>
+          <ProjectsSection />
+        </b-container>
+        <b-img :src="BG" />
+      </div>
+    </section>
+    <section>
       <b-container>
-        <ProjectsSection />
+        <AboutMeSection />
       </b-container>
-      <b-img :src="BG" />
-    </div>
-    <b-container>
-      <AboutMeSection />
-    </b-container>
+    </section>
     <div class="footer">
       <FooterSection />
       <b-img :src="FooterBG" />
@@ -58,6 +66,11 @@ export default {
 
 <style lang="scss">
   @import './assets/style/app.scss';
+
+  section {
+    margin: 10rem auto;
+  }
+
   #app {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;

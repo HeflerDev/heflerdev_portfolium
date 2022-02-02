@@ -1,31 +1,39 @@
 <template lang="html">
   <b-container>
-  <div class="content">
-    <div>
-      <div class="contact">
-        CONTATO
-      </div>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <div class="item">
-        <LinkedinIcon :color="iconColor" :size="iconSize" class="icn"/>
-        <div class="item-description">
-            <p>
-              Contact me on <b> Linkedin.</b>
-            </p>
+    <div class="content">
+      <div>
+        <div class="contact">
+          CONTATO
         </div>
-    </div>
-    <div class="item">
-      <GMailIcon :color="iconColor" :size="iconSize" class="icn"/>
-      <div class="item-description">
-        <p>
-          Reach me through <b>Gmail.</b>
-        </p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <div class="item">
+        <LinkedinIcon
+          :color="iconColor"
+          :size="iconSize"
+          class="icn"
+        />
+        <div class="item-description">
+          <p>
+            Contact me on <b> Linkedin.</b>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <GMailIcon
+          :color="iconColor"
+          :size="iconSize"
+          class="icn"
+        />
+        <div class="item-description">
+          <p>
+            Reach me through <b>Gmail.</b>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
   </b-container>
 </template>
 
@@ -61,7 +69,7 @@ export default {
       color: $orange;
       border: solid $orange 2px;
       width: fit-content;
-      margin: auto;
+      margin: auto auto 2rem auto;
       padding: 1rem 2rem;
       font-size: 36px;
       font-weight: 900;
