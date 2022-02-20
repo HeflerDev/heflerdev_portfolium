@@ -1,0 +1,59 @@
+{
+  "pt-BR": {
+    "content": {
+      "header": {
+        "call": "Olá, me chamo Hefler",
+        "subtitle": "<b>|</b>Desenvolvedor FullStack",
+        "secondary": {
+          "line-one": "Desenvolver",
+          "line-two": "Programar",
+          "line-three": "Solucionar",
+          "line-four": "Criar"
+        }
+      },
+      "body": {
+        "about": {
+          "title": "COMO POSSO TE AJUDAR?",
+          "text": "Sendo um desenvolvedor Fullstack, posso realizar todas as etapas de criação de uma página, porém meu foco é no Frontend, pegando todas as ideias, wireframes, etc, e tornando em um produto viável."
+        },
+        "skills": {
+          "title": "MINHAS HABILIDADES",
+          "web-dev": {
+            "title": "Web Dev",
+            "text": "Conhecimento relacionado ao desenvolvimento para criar e manter websites."
+          },
+          "Frontend": {
+            "title": "Frontend",
+            "text": "Conhecimento focado em poderosas tecnologias do mercado para a construção de interfaces."
+          },
+          "Backend": {
+            "title": "Backend",
+            "text": "Conhecimento focado em lidar com as operações que acontecem por detrás da aplicação."
+          }
+        },
+        "projects": {
+          "title": "PROJETOS",
+          "text": "Possuo vários projetos.",
+          "button": "CONFERIR"
+        },
+        "aboutMe": {
+          "title": "SOBRE MIM",
+          "location": "Porto Alegre, Rio Grande do Sul",
+          "text": "Olá, eu sou o Hefler! Utilizo do JavaScript como uma poderosa ferramenta para transformar ideias em produtos digitais, sempre mantendo atenção aos detalhes, estabilidade e escalonabilidade do projeto, fazendo com que seja o mais fácil possível realizar manutenções e mantê-lo. Estou fechando meu primeiro ano como profissional, trabalhava como FullStack em uma plataforma de inteligência de mercado imobiliário mas decidi expandir meus horizontes para trabalhar com diversas possibilidades diferentes."
+        },
+        "footer": {
+          "title": "CONTATO",
+          "text": "Bom, eu adoraria não apenas entrar em contato com possíveis empregadores, mas também com pessoas que compartilham os mesmos interesses que eu. Então, quer bater um papo?",
+          "linkedin": "Contate-me através do ",
+          "email": "e-mail "
+        }
+      }
+    }
+  },
+  
+  "en-US": {
+    "content": {
+
+    }
+  }
+}
