@@ -1,18 +1,22 @@
 <template lang="html">
-  <b-container class="my-4"i>
+  <b-container class="my-4">
     <div class="content">
-      <h1>COMO POSSO TE AJUDAR?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>{{ content.title }}</h1>
+      <p>{{ content.text }}</p>
     </div>
-    <div class="divider">
-
-    </div>
+    <div class="divider" />
   </b-container>
 </template>
 
 <script>
+import { store } from '../state/store.js'
 export default {
-  name: 'AboutSection'
+  name: 'AboutSection',
+  data () {
+    return {
+      content: store.currentLang.content.body.about
+    }
+  }
 }
 </script>
 

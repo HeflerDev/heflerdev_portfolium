@@ -1,24 +1,42 @@
 <template lang="html">
-  <div class="content" :class="{open: active}">
+  <div
+    class="content"
+    :class="{open: active}"
+  >
     <div class="icon-container">
-      <div :is="icon"
+      <div
+        :is="icon"
         color="white"
         :size="iconSize"
       />
     </div>
-    <h2>{{title}}</h2>
+    <h2>{{ title }}</h2>
     <p>
-      {{text}}
-      <VueSlideUpDown :active="active" >
+      {{ text }}
+      <VueSlideUpDown :active="active">
         <b-row>
-          <b-col col sm="4" v-for="technology in technologies" :key="technology">
-            <div class='aux-icon' :is="technology" :size="iconSize" :color="iconColor"></div>
+          <b-col
+            v-for="technology in technologies"
+            :key="technology"
+            col
+            sm="4"
+          >
+            <div
+              :is="technology"
+              class="aux-icon"
+              :size="iconSize"
+              :color="iconColor"
+            />
           </b-col>
         </b-row>
       </VueSlideUpDown>
     </p>
-    <b-button class="btn see-more-button" :class="{isActive: active}" @click="expandButton">
-        Technologies
+    <b-button
+      class="btn see-more-button"
+      :class="{isActive: active}"
+      @click="expandButton"
+    >
+      Technologies
     </b-button>
   </div>
 </template>
@@ -43,6 +61,23 @@ import WebpackIcon from '../../assets/icons/WebpackIcon.vue'
 
 export default {
   name: 'ContainerSkill',
+  components: {
+    FrontIcon,
+    BackIcon,
+    BrowserIcon,
+    CSSIcon,
+    BootstrapIcon,
+    GitIcon,
+    HtmlIcon,
+    JSIcon,
+    RailsIcon,
+    ReactIcon,
+    RubyIcon,
+    SASSIcon,
+    VueIcon,
+    WebpackIcon,
+    VueSlideUpDown
+  },
   props: {
     icon: String,
     iconColor: String,
@@ -61,23 +96,6 @@ export default {
     expandButton () {
       this.active ? this.active = false : this.active = true
     }
-  },
-  components: {
-    FrontIcon,
-    BackIcon,
-    BrowserIcon,
-    CSSIcon,
-    BootstrapIcon,
-    GitIcon,
-    HtmlIcon,
-    JSIcon,
-    RailsIcon,
-    ReactIcon,
-    RubyIcon,
-    SASSIcon,
-    VueIcon,
-    WebpackIcon,
-    VueSlideUpDown
   }
 }
 </script>

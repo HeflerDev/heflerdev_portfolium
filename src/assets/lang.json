@@ -1,9 +1,9 @@
 {
-  "pt-BR": {
+  "ptBR": {
     "content": {
       "header": {
         "call": "Olá, me chamo Hefler",
-        "subtitle": "<b>|</b>Desenvolvedor FullStack",
+        "subtitle": "Desenvolvedor FullStack",
         "secondary": {
           "line-one": "Desenvolver",
           "line-two": "Programar",
@@ -18,15 +18,15 @@
         },
         "skills": {
           "title": "MINHAS HABILIDADES",
-          "web-dev": {
+          "webdev": {
             "title": "Web Dev",
             "text": "Conhecimento relacionado ao desenvolvimento para criar e manter websites."
           },
-          "Frontend": {
+          "frontend": {
             "title": "Frontend",
             "text": "Conhecimento focado em poderosas tecnologias do mercado para a construção de interfaces."
           },
-          "Backend": {
+          "backend": {
             "title": "Backend",
             "text": "Conhecimento focado em lidar com as operações que acontecem por detrás da aplicação."
           }
@@ -44,14 +44,14 @@
         "footer": {
           "title": "CONTATO",
           "text": "Bom, eu adoraria não apenas entrar em contato com possíveis empregadores, mas também com pessoas que compartilham os mesmos interesses que eu. Então, quer bater um papo?",
-          "linkedin": "Contate-me através do ",
-          "email": "e-mail "
+          "linkedin": " Contate-me através do ",
+          "email": " ou pelo "
         }
       }
     }
   },
   
-  "en-US": {
+  "enUS": {
     "content": {
 
     }

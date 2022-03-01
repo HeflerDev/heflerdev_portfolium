@@ -3,11 +3,11 @@
     <div class="content">
       <div>
         <div class="contact">
-          CONTATO
+          {{ content.title }}
         </div>
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        {{ content.text }}
       </p>
       <div class="item">
         <LinkedinIcon
@@ -17,7 +17,7 @@
         />
         <div class="item-description">
           <p>
-            Contact me on <b> Linkedin.</b>
+            {{ content.linkedin }} <b> Linkedin.</b>
           </p>
         </div>
       </div>
@@ -29,7 +29,7 @@
         />
         <div class="item-description">
           <p>
-            Reach me through <b>Gmail.</b>
+            {{ content.email }} <b>Gmail.</b>
           </p>
         </div>
       </div>
@@ -40,6 +40,7 @@
 <script>
 import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
 import GMailIcon from '../assets/icons/GMailIcon.vue'
+import {store} from '../state/store.js'
 
 export default {
   name: 'FooterSection',
@@ -50,7 +51,8 @@ export default {
   data () {
     return {
       iconColor: '#db3513',
-      iconSize: 36
+      iconSize: 36,
+      content: store.currentLang.content.body.footer
     }
   }
 }

@@ -6,18 +6,27 @@
   >
     <div class="content">
       <h1>{{ text }}</h1>
-      <span><b>|</b> Desenvolvedor FullStack</span>
+      <span>
+        <b>|</b>{{ store.currentLang.content.header.subtitle }}
+      </span>
     </div>
   </b-col>
 </template>
 
 <script>
+import { store } from '../../state/store.js'
+
 export default {
   name: 'TextPresentation',
   props: {
     text: {
       default: '',
       type: String
+    }
+  },
+  data () {
+    return {
+      store
     }
   }
 }

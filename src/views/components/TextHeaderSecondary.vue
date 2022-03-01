@@ -1,17 +1,28 @@
 <template lang="html">
-  <b-col col sm="2" class="d-flex justify-content-end">
-        <ul>
-          <li>Desenvolver</li>
-          <li>Programar</li>
-          <li>Solucionar</li>
-          <li>Criar</li>
-        </ul>
+  <b-col
+    col
+    sm="2"
+    class="d-flex justify-content-end"
+  >
+    <ul>
+      <li>{{ store['line-one'] }}</li>
+      <li>{{ store['line-two'] }}</li>
+      <li>{{ store['line-three'] }}</li>
+      <li>{{ store['line-four'] }}</li>
+    </ul>
   </b-col>
 </template>
 
 <script>
+import { store } from '../../state/store.js'
+
 export default {
-  name: 'TextHeaderSecondary'
+  name: 'TextHeaderSecondary',
+  data () {
+    return {
+      store: store.currentLang.content.header.secondary
+    }
+  }
 }
 </script>
 
