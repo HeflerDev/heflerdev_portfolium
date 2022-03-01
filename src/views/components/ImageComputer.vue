@@ -1,5 +1,5 @@
 <template lang="html">
-  <b-col col sm="7" class="">
+  <b-col col sm="12" class="">
     <div class="content">
       <b-img fluid :src="ComputerImage" alt="computer_image"/>
     </div>

@@ -25,7 +25,7 @@ export default {
 
   .content {
     text-align: center;
-    margin: 3rem auto;
+    margin: 15rem auto 5rem auto;
     h1 {
       color: $gray-800;
       font-weight: bold;

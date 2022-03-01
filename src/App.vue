@@ -80,12 +80,13 @@ export default {
     position: relative;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding: 1rem 0;
     img {
       position:absolute !important;
       top:0;
       z-index: -1;
-      width: 1400px;
+      height: 100%;
     }
   }
 
@@ -99,7 +100,6 @@ export default {
       top: 0;
       z-index: -1;
     }
-
   }
 
   .project-section {

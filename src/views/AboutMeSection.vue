@@ -2,20 +2,24 @@
   <div class="content">
     <b-row no-gutter>
       <b-col
-        col
-        sm="6"
+        cols="12"
       >
         <h1>{{ content.title }}</h1>
         <div class="subtitle">
-          <LocationIcon :color="iconColor" /><h6>{{ content.location }}</h6>
+          <div class="location-icon">
+            <LocationIcon
+              :size="size"
+              :color="iconColor"
+            />
+          </div>
+          <h6>{{ content.location }}</h6>
         </div>
         <p>
           {{ content.text }}
         </p>
       </b-col>
       <b-col
-        col
-        sm="6"
+        cols="12"
       />
     </b-row>
   </div>
@@ -34,6 +38,7 @@ export default {
   data () {
     return {
       iconColor: '#db3513',
+      size: '100%',
       content: store.currentLang.content.body.aboutMe
 
     }
@@ -46,7 +51,8 @@ export default {
 
   .content {
     background-color: #eef2f7;
-    padding:5rem 3rem;
+    text-align: center;
+    padding: 5px;
     h1 {
       margin: 1rem 0;
     }
@@ -56,9 +62,12 @@ export default {
   }
 
   .subtitle {
-    display: flex;
     h6{
       margin: auto 10px;
     }
+  }
+
+  .location-icon {
+    height: 10rem;
   }
 </style>

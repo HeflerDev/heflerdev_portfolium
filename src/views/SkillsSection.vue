@@ -13,7 +13,7 @@
             :title="content.webdev.title"
             :text="content.webdev.text"
             :technologies="['HtmlIcon', 'CSSIcon', 'WebpackIcon', 'GitIcon']"
-            :icon-size="44"
+            :icon-size="size"
           />
         </b-col>
 
@@ -27,7 +27,7 @@
             :title="content.frontend.title"
             :text="content.frontend.text"
             :technologies="['ReactIcon', 'VueIcon', 'SASSIcon', 'BootstrapIcon']"
-            :icon-size="44"
+            :icon-size="size"
           />
         </b-col>
 
@@ -41,7 +41,7 @@
             :title="content.backend.title"
             :text="content.backend.text"
             :technologies="['RubyIcon', 'RailsIcon']"
-            :icon-size="44"
+            :icon-size="size"
           />
         </b-col>
       </b-row>
@@ -61,7 +61,8 @@ export default {
   data () {
     return {
       iconColor: '#db3513',
-      content: store.currentLang.content.body.skills
+      content: store.currentLang.content.body.skills,
+      size: '100%'
     }
   }
 }

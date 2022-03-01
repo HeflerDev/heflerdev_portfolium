@@ -1,7 +1,7 @@
 <template lang="html">
   <header>
     <b-container class="b-cont">
-      <b-row>
+      <b-row class="ro">
         <TextPresentation :text="store.currentLang.content.header.call" />
         <ImageComputer />
         <TextHeaderSecondary />
@@ -28,7 +28,7 @@ import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
 
 import { store } from '../state/store.js'
 
-const iconSize = 36
+const iconSize = '100%'
 
 export default {
   name: 'HomeHeader',
@@ -47,9 +47,6 @@ export default {
     }
   }
 }
-
-console.log(store.Lang)
-
 </script>
 
 <style lang="scss" scoped>
@@ -57,6 +54,7 @@ console.log(store.Lang)
 
   header {
     position: relative;
+    min-height: 100vh;
   }
 
   .b-cont {
@@ -65,22 +63,26 @@ console.log(store.Lang)
     }
   }
 
+  .ro {
+    height: 100vh;
+  }
+
   .black {
     position: absolute;
     top: 0;
     z-index: -1;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-color: $dark;
   }
 
   .icons {
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    width: 200px;
-    right: 100px;
-    bottom: 30px;
+    justify-content: space-around;
+    height: 6rem;
+    width: 100%;
+    bottom: -10rem;
   }
 
 </style>

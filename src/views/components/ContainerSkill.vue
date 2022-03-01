@@ -85,7 +85,6 @@ export default {
     title: String,
     text: String,
     technologies: Array,
-    iconSize: Number
   },
   data () {
     return {
@@ -103,6 +102,10 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/style/app.scss';
 
+  p {
+    margin-bottom: 6rem;
+  }
+
   .content {
     width: 100%;
     min-height: 15rem;
@@ -115,15 +118,17 @@ export default {
     flex-direction: column;
     overflow: hidden;
     transition: 0.1s;
+    margin: 3rem 0;
     h2, p {
       text-align: left;
     }
 
     .icon-container {
         background-color: $orange;
-        width: fit-content;
-        padding: 10px;
+        padding: 30px;
         border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
     }
   }
 
@@ -134,10 +139,15 @@ export default {
     left: 0;
     width: 100%;
     border-radius: 0;
+    font-size: 3.5rem;
   }
 
   .aux-icon {
+    display: flex ;
+    justify-content: center;
     margin: 1rem auto;
+    width: 8rem;
+    height: 8rem;
     transition: 0.2s;
     &:hover {
       transform: scale(1.3);
@@ -154,4 +164,5 @@ export default {
     border: solid $gray-400 1px;
     transition: 0.2s;
   }
+
 </style>

@@ -1,7 +1,7 @@
 <template lang="html">
   <b-col
     col
-    sm="2"
+    sm="12"
     class="d-flex justify-content-end"
   >
     <ul>
@@ -30,8 +30,6 @@ export default {
   @import "../../assets/style/app.scss";
 
   ul {
-    margin-top: auto;
-    margin-bottom: 8rem;
     list-style: none;
     color: $light;
     opacity: (0.2);

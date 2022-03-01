@@ -34,17 +34,17 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 10rem;
     min-height: 360px;
     h1, p {
       color: $light;
-      margin: 0;
+      margin: 2rem 0;
     }
     button {
-      font-size: 2rem;
+      font-size: 4rem;
       padding: 0.5rem 5rem;
       font-weight: 100;
       width: auto;
+      margin: 2rem 0;
     }
   }
 </style>

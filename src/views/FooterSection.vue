@@ -40,7 +40,7 @@
 <script>
 import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
 import GMailIcon from '../assets/icons/GMailIcon.vue'
-import {store} from '../state/store.js'
+import { store } from '../state/store.js'
 
 export default {
   name: 'FooterSection',
@@ -61,19 +61,23 @@ export default {
 <style lang="scss" scoped>
   @import '../assets/style/app.scss';
 
+  svg {
+    margin: auto 0;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding: 5rem 10rem;
+    padding: 2rem 0;
     .contact {
       color: $orange;
       border: solid $orange 2px;
       width: fit-content;
       margin: auto auto 2rem auto;
       padding: 1rem 2rem;
-      font-size: 36px;
+      font-size: 5rem;
       font-weight: 900;
     }
   }
@@ -90,6 +94,7 @@ export default {
       justify-content: center;
       p {
         margin: 0;
+        font-size: 2.5rem;
       }
     }
   }
