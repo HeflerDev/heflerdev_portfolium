@@ -1,7 +1,15 @@
 <template lang="html">
-  <b-col col sm="7" class="">
+  <b-col
+    cols="10"
+    class="positioning"
+  >
     <div class="content">
-      <b-img fluid :src="ComputerImage" alt="computer_image"/>
+      <b-img
+        fluid
+        :src="ComputerImage"
+        alt="computer_image"
+        class="computer-image"
+      />
     </div>
   </b-col>
 </template>
@@ -10,9 +18,9 @@
 import ComputerImage from '../../assets/images/COMPUTER.png'
 
 export default {
-  name: "ImageComputer",
-  data() {
-    return{
+  name: 'ImageComputer',
+  data () {
+    return {
       ComputerImage: ComputerImage
     }
   }
@@ -22,10 +30,25 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/style/app.scss';
 
+  .positioning {
+    @include media-breakpoint-up(md) {
+      top: -120px;
+    }
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: -200px;
+    }
+    @include media-breakpoint-up(xl) {
+      left: 100px;
+    }
+  }
   .content {
-    margin-top: 5rem;
+    margin-top: 1rem;
     img {
       transform: scale(1.3);
+      @include media-breakpoint-up(md) {
+        width: 700px;
+      }
     }
   }
 </style>

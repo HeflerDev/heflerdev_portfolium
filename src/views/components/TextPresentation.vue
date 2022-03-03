@@ -1,17 +1,32 @@
 <template lang="html">
-    <b-col col sm="3" class="mt-4">
-      <div class="content">
-        <h1>{{text}}</h1>
-        <span><b>|</b> Desenvolvedor FullStack</span>
-      </div>
-    </b-col>
+  <b-col
+    cols="12"
+    class="mt-4"
+  >
+    <div class="content">
+      <h1>{{ text }}</h1>
+      <span>
+        <b>|</b>{{ store.currentLang.content.header.subtitle }}
+      </span>
+    </div>
+  </b-col>
 </template>
 
 <script>
+import { store } from '../../state/store.js'
+
 export default {
-  name: "TextPresentation",
+  name: 'TextPresentation',
   props: {
-    text: String
+    text: {
+      default: '',
+      type: String
+    }
+  },
+  data () {
+    return {
+      store
+    }
   }
 }
 </script>
@@ -19,14 +34,14 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/style/app.scss';
 
-  .content  {
-    width: 20rem;
-    margin-top: 8rem;
+  .content {
+    width: 290px;
   }
 
   h1 {
     color: $light;
     font-weight: 900;
+    margin-bottom: 0;
   }
 
   span {
@@ -37,6 +52,5 @@ export default {
   b {
     color: $orange;
   }
-
 
 </style>

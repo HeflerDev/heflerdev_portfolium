@@ -1,4 +1,7 @@
 $dark: black;
+$orange: #db3513;
+$primary: $orange;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+@import './text.scss';
