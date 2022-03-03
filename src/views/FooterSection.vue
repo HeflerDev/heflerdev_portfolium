@@ -77,8 +77,12 @@ export default {
       width: fit-content;
       margin: auto auto 2rem auto;
       padding: 1rem 2rem;
-      font-size: 5rem;
+      font-size: 2rem;
       font-weight: 900;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 50rem;
+      margin: auto;
     }
   }
 
@@ -94,7 +98,7 @@ export default {
       justify-content: center;
       p {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 1rem;
       }
     }
   }

@@ -2,9 +2,10 @@
   <b-container>
     <div class="content">
       <h1>{{ content.title }}</h1>
-      <b-row class="justify-content-between">
+      <b-row class="justify-content-around">
         <b-col
           col
+          md="5"
           lg="3"
         >
           <ContainerSkill
@@ -19,6 +20,7 @@
 
         <b-col
           col
+          md="5"
           lg="3"
         >
           <ContainerSkill
@@ -33,6 +35,7 @@
 
         <b-col
           col
+          md="5"
           lg="3"
         >
           <ContainerSkill

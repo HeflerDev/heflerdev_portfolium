@@ -14,12 +14,13 @@
     <p>
       {{ text }}
       <VueSlideUpDown :active="active">
-        <b-row>
+        <b-row class="icons-row">
           <b-col
             v-for="technology in technologies"
             :key="technology"
             col
             sm="4"
+            class="icon-cont"
           >
             <div
               :is="technology"
@@ -36,13 +37,14 @@
       :class="{isActive: active}"
       @click="expandButton"
     >
-      Technologies
+      {{ content.button }}
     </b-button>
   </div>
 </template>
 
 <script>
 import VueSlideUpDown from 'vue-slide-up-down'
+import {store} from '../../state/store.js'
 
 import FrontIcon from '../../assets/icons/FrontIcon.vue'
 import BackIcon from '../../assets/icons/BackIcon.vue'
@@ -88,7 +90,8 @@ export default {
   },
   data () {
     return {
-      active: false
+      active: false,
+      content: store.currentLang.content.body.skills
     }
   },
   methods: {
@@ -103,13 +106,16 @@ export default {
   @import '../../assets/style/app.scss';
 
   p {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
   }
 
   .content {
     width: 100%;
     min-height: 15rem;
-    height: fit-content;
+    height: 90%;
     border: solid $gray-600 3px;
     border-radius: 20px;
     padding: 2rem;
@@ -118,17 +124,20 @@ export default {
     flex-direction: column;
     overflow: hidden;
     transition: 0.1s;
-    margin: 3rem 0;
+    margin: 2rem 0;
+    @include media-breakpoint-up(sm) {
+      padding: 2rem 1rem;
+    }
     h2, p {
       text-align: left;
     }
 
     .icon-container {
-        background-color: $orange;
-        padding: 30px;
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
+      background-color: $orange;
+      border-radius: 50%;
+      padding: 10px;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
@@ -139,16 +148,18 @@ export default {
     left: 0;
     width: 100%;
     border-radius: 0;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   .aux-icon {
     display: flex ;
     justify-content: center;
-    margin: 1rem auto;
-    width: 8rem;
-    height: 8rem;
+    width: 3rem;
+    margin: 1rem;
     transition: 0.2s;
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
     &:hover {
       transform: scale(1.3);
       transition: 0.5s;
@@ -163,6 +174,22 @@ export default {
   .open {
     border: solid $gray-400 1px;
     transition: 0.2s;
+  }
+
+  .icons-row {
+    margin: 1rem 0;
+  }
+
+  .icon-cont {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-up(sm) {
+      margin: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0.5rem 0;
+    }
   }
 
 </style>

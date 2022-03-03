@@ -2,6 +2,7 @@
   <div class="content">
     <b-row no-gutter>
       <b-col
+        lg="6"
         cols="12"
       >
         <h1>{{ content.title }}</h1>
@@ -59,15 +60,28 @@ export default {
     p {
       margin-top: 3rem;
     }
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 2rem;
+    }
   }
 
   .subtitle {
     h6{
       margin: auto 10px;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.5rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: flex;
+       justify-content: center;
     }
   }
 
   .location-icon {
     height: 10rem;
+    @include media-breakpoint-up(lg) {
+      height: 2rem;
+    }
   }
 </style>

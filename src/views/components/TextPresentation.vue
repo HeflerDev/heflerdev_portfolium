@@ -1,7 +1,6 @@
 <template lang="html">
   <b-col
-    col
-    sm="12"
+    cols="12"
     class="mt-4"
   >
     <div class="content">
@@ -35,8 +34,8 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/style/app.scss';
 
-  .content  {
-    margin-top: 3rem;
+  .content {
+    width: 290px;
   }
 
   h1 {

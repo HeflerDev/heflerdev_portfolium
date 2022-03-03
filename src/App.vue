@@ -68,7 +68,7 @@ export default {
   @import './assets/style/app.scss';
 
   section {
-    margin: 10rem auto;
+    margin: 2rem auto;
   }
 
   #app {
@@ -103,7 +103,7 @@ export default {
   }
 
   .project-section {
-    margin: 2rem 0;
+    margin: 0.5rem 0;
 
     @media (min-width:map-get($grid-breakpoints, "lg")) {
       margin: 3rem;

@@ -35,12 +35,16 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     min-height: 360px;
+    @include media-breakpoint-up(lg) {
+      width: 50vw;
+      margin: auto;
+    }
     h1, p {
       color: $light;
       margin: 2rem 0;
     }
     button {
-      font-size: 4rem;
+      font-size: 1rem;
       padding: 0.5rem 5rem;
       font-weight: 100;
       width: auto;
