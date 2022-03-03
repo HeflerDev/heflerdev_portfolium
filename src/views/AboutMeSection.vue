@@ -21,7 +21,16 @@
       </b-col>
       <b-col
         cols="12"
-      />
+        lg="6"
+        class="d-flex flex-column justify-content-center"
+      >
+        <div class="image-column">
+          <b-img
+            fluid
+            :src="profilePic"
+          />
+        </div>
+      </b-col>
     </b-row>
   </div>
 </template>
@@ -30,6 +39,7 @@
 
 import LocationIcon from '../assets/icons/LocationIcon.vue'
 import { store } from '../state/store.js'
+import ProfilePic from '../assets/images/prof.png'
 
 export default {
   name: 'AboutMeSection',
@@ -40,6 +50,7 @@ export default {
     return {
       iconColor: '#db3513',
       size: '100%',
+      profilePic: ProfilePic,
       content: store.currentLang.content.body.aboutMe
 
     }
@@ -59,9 +70,26 @@ export default {
     }
     p {
       margin-top: 3rem;
+      padding: 0 1rem;
+      @include media-breakpoint-up(md) {
+        padding: 0 2rem 1rem 2rem;
+      }
     }
     @include media-breakpoint-up(lg) {
       padding: 1rem 2rem;
+    }
+    .image-column {
+      img {
+        width: 310px;
+        border-radius: 10px;
+      }
+      @include media-breakpoint-up(sm) {
+        width: 310px;
+        height: 310px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: auto;
+      }
     }
   }
 
@@ -79,7 +107,7 @@ export default {
   }
 
   .location-icon {
-    height: 10rem;
+    height: 5rem;
     @include media-breakpoint-up(lg) {
       height: 2rem;
     }

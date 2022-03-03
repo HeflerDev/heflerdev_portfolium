@@ -72,12 +72,13 @@ export default {
   }
 
   .ro {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 450px;
     margin: auto;
     position: relative;
     @include media-breakpoint-up(md) {
       max-width: initial;
+      min-height: initial;
     }
   }
 

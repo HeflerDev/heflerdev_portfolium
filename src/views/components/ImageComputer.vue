@@ -32,15 +32,11 @@ export default {
 
   .positioning {
     @include media-breakpoint-up(md) {
-      top: -4rem;
+      top: -120px;
     }
     @include media-breakpoint-up(lg) {
       position: absolute;
-      top: -8rem;
-    }
-    @include media-breakpoint-up(lg) {
-      position: absolute;
-      top: -8rem;
+      top: -200px;
     }
     @include media-breakpoint-up(xl) {
       left: 100px;

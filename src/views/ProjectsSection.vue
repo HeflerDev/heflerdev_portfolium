@@ -2,14 +2,14 @@
   <div class="content">
     <h1>{{ content.title }}</h1>
     <p>{{ content.text }}</p>
-    <div class="">
+    <a href="https://www.github.com/heflerdev" target="_blank">
       <b-button
         variant="primary"
         pill
       >
         {{ content.button }}
       </b-button>
-    </div>
+    </a>
   </div>
 </template>
 

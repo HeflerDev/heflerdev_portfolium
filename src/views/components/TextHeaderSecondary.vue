@@ -33,12 +33,12 @@ export default {
     justify-content: end;
     @include media-breakpoint-up(md) {
       position:absolute;
-      top: -300px;
+      top: -350px;
       right: -25px;
     }
     @include media-breakpoint-up(lg) {
       position:absolute;
-      top: -400px;
+      top: -450px;
       right: 0;
     }
   }

@@ -17,7 +17,7 @@
         />
         <div class="item-description">
           <p>
-            {{ content.linkedin }} <b> Linkedin.</b>
+            {{ content.linkedin }} <a href="https://www.linkedin.com/in/heflerdev" target="_blank"><b> Linkedin.</b></a>
           </p>
         </div>
       </div>
@@ -29,7 +29,7 @@
         />
         <div class="item-description">
           <p>
-            {{ content.email }} <b>Gmail.</b>
+            {{ content.email }} <a href="mailto:heflerdev@gmail.com"><b>Gmail.</b></a>
           </p>
         </div>
       </div>

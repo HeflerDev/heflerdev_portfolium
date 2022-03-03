@@ -69,6 +69,12 @@ export default {
 
   section {
     margin: 2rem auto;
+    @include media-breakpoint-up(md) {
+      margin: 100px auto;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 150px auto;
+    }
   }
 
   #app {
